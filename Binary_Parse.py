@@ -1,5 +1,5 @@
-def parse_mot(file_path):
-    with open(file_path, 'r') as f:
+def parse_mot('FUSO.mot'):
+    with open('FUSO.mot', 'r') as f:
         for line in f:
             record_type = line[:2]  # First two characters (e.g., S0, S1, etc.)
             byte_count = int(line[2:4], 16)  # Number of bytes

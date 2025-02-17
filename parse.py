@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
 
 # Load and parse the CDD file
-def parse_cdd(file_path):
-    tree = ET.parse(file_path)
+def parse_cdd("MyEcu.cdd"):
+    tree = ET.parse("MyEcu.cdd")
     root = tree.getroot()
     
     # Extract important data (modify based on your CDD structure)
