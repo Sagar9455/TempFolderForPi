@@ -1,5 +1,5 @@
 [Unit]
-Description=My Python Script
+Description=My Startup Script
 After=network.target
 
 [Service]
@@ -9,6 +9,7 @@ StandardOutput=inherit
 StandardError=inherit
 Restart=always
 User=pi
+Environment="PYTHONUNBUFFERED=1"
 
 [Install]
 WantedBy=multi-user.target
