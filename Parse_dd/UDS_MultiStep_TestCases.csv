@@ -1,0 +1,9 @@
+TestID,Step,UDS_Service,SubFunction/DataID,ExpectedResponse,Timeout_ms
+UDS_TC001,Step1,0x10,0x01 (Default Session),0x50 0x01 (Session Started),5000
+UDS_TC001,Step2,0x11,0x01 (Hard Reset),0x51 0x01 (Reset Acknowledged),5000
+UDS_TC001,Step3,0x2E,0xF190 (VIN Write),0x6E 0xF190 (Write Successful),7000
+UDS_TC002,Step1,0x10,0x02 (Programming Session),0x50 0x02 (Session Started),5000
+UDS_TC002,Step2,0x22,0xF190 (VIN Read),0x62 0xF190 (VIN Data),7000
+UDS_TC003,Step1,0x31,0x01 (Routine Control Start),0x71 0x01 (Routine Started),8000
+UDS_TC003,Step2,0x34,0x00 (Request Download),0x74 0x00 (Download Request Ack),10000
+UDS_TC003,Step3,0x36,0x00 (Transfer Exit),0x76 0x00 (Transfer Exit Ack),10000

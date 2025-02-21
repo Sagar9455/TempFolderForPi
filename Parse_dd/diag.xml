@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UDSConfiguration>
+    <Services>
+        <Service id="0x10" name="DiagnosticSessionControl">
+            <SubServices>
+                <SubService id="0x01" name="DefaultSession"/>
+                <SubService id="0x02" name="ProgrammingSession"/>
+                <SubService id="0x03" name="ExtendedSession"/>
+            </SubServices>
+        </Service>
+        <Service id="0x11" name="ECUReset">
+            <SubServices>
+                <SubService id="0x01" name="HardReset"/>
+                <SubService id="0x02" name="KeyOffOnReset"/>
+            </SubServices>
+        </Service>
+        <Service id="0x14" name="ReadDTCInformation"/>
+        <Service id="0x19" name="ReadDiagnosticInformation">
+            <SubServices>
+                <SubService id="0x02" name="ReportDTCByStatusMask"/>
+                <SubService id="0x06" name="ReportDTCExtendedDataRecordByDTCNumber"/>
+            </SubServices>
+        </Service>
+        <Service id="0x22" name="ReadDataByIdentifier"/>
+        <Service id="0x23" name="ReadMemoryByAddress"/>
+        <Service id="0x24" name="ReadScalingDataByIdentifier"/>
+        <Service id="0x27" name="SecurityAccess">
+            <SubServices>
+                <SubService id="0x01" name="RequestSeedLevel1"/>
+                <SubService id="0x02" name="SendKeyLevel1"/>
+            </SubServices>
+        </Service>
+        <Service id="0x28" name="CommunicationControl"/>
+        <Service id="0x2A" name="ReadDataByPeriodicIdentifier"/>
+        <Service id="0x2C" name="DynamicallyDefineDataIdentifier"/>
+        <Service id="0x2E" name="WriteDataByIdentifier"/>
+        <Service id="0x2F" name="InputOutputControlByIdentifier"/>
+        <Service id="0x31" name="RoutineControl">
+            <SubServices>
+                <SubService id="0x01" name="StartRoutine"/>
+                <SubService id="0x02" name="StopRoutine"/>
+                <SubService id="0x03" name="RequestRoutineResults"/>
+            </SubServices>
+        </Service>
+        <Service id="0x34" name="RequestDownload"/>
+        <Service id="0x35" name="RequestUpload"/>
+        <Service id="0x36" name="TransferData"/>
+        <Service id="0x37" name="RequestTransferExit"/>
+        <Service id="0x3E" name="TesterPresent"/>
+        <Service id="0x83" name="AccessTimingParameters"/>
+        <Service id="0x84" name="SecureDataTransmission"/>
+        <Service id="0x85" name="ControlDTCSetting"/>
+        <Service id="0x86" name="ResponseOnEvent"/>
+        <Service id="0x87" name="LinkControl"/>
+    </Services>
+    
+    <DTCs>
+        <DTC id="0x123456" description="Engine Overheat" severity="High"/>
+        <DTC id="0x654321" description="Battery Voltage Low" severity="Medium"/>
+    </DTCs>
+    
+    <NRCs>
+        <NRC id="0x10" description="General Reject"/>
+        <NRC id="0x11" description="Service Not Supported"/>
+        <NRC id="0x12" description="Subfunction Not Supported"/>
+        <NRC id="0x13" description="Incorrect Message Length or Invalid Format"/>
+        <NRC id="0x22" description="Conditions Not Correct"/>
+        <NRC id="0x24" description="Request Sequence Error"/>
+        <NRC id="0x31" description="Request Out Of Range"/>
+        <NRC id="0x33" description="Security Access Denied"/>
+        <NRC id="0x35" description="Invalid Key"/>
+        <NRC id="0x36" description="Exceeded Number of Attempts"/>
+        <NRC id="0x37" description="Required Time Delay Not Expired"/>
+    </NRCs>
+    
+    <Responses>
+        <Positive>
+            <Response id="0x50" description="DiagnosticSessionControl Positive Response"/>
+            <Response id="0x51" description="ECUReset Positive Response"/>
+            <Response id="0x54" description="ReadDTCInformation Positive Response"/>
+            <Response id="0x59" description="ReadDiagnosticInformation Positive Response"/>
+            <Response id="0x62" description="ReadDataByIdentifier Positive Response"/>
+            <Response id="0x63" description="ReadMemoryByAddress Positive Response"/>
+            <Response id="0x64" description="ReadScalingDataByIdentifier Positive Response"/>
+            <Response id="0x67" description="SecurityAccess Positive Response"/>
+            <Response id="0x68" description="CommunicationControl Positive Response"/>
+            <Response id="0x6A" description="ReadDataByPeriodicIdentifier Positive Response"/>
+            <Response id="0x6C" description="DynamicallyDefineDataIdentifier Positive Response"/>
+            <Response id="0x6E" description="WriteDataByIdentifier Positive Response"/>
+            <Response id="0x6F" description="InputOutputControlByIdentifier Positive Response"/>
+            <Response id="0x71" description="RoutineControl Positive Response"/>
+            <Response id="0x74" description="RequestDownload Positive Response"/>
+            <Response id="0x75" description="RequestUpload Positive Response"/>
+            <Response id="0x76" description="TransferData Positive Response"/>
+            <Response id="0x77" description="RequestTransferExit Positive Response"/>
+            <Response id="0x7E" description="TesterPresent Positive Response"/>
+            <Response id="0x83" description="AccessTimingParameters Positive Response"/>
+            <Response id="0x84" description="SecureDataTransmission Positive Response"/>
+            <Response id="0x85" description="ControlDTCSetting Positive Response"/>
+            <Response id="0x86" description="ResponseOnEvent Positive Response"/>
+            <Response id="0x87" description="LinkControl Positive Response"/>
+        </Positive>
+        <Negative>
+            <Response id="0x7F" description="General Negative Response"/>
+        </Negative>
+    </Responses>
+</UDSConfiguration>

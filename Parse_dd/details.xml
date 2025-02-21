@@ -1,0 +1,14 @@
+<StudentList>
+     <student>
+           <Name>Sai</Name>
+           <Rollno>75</Rollno>
+           <Class>4</Class>
+           <Address>Pune</Address>
+     </student>
+      <student>
+           <Name>Kiran</Name>
+           <Rollno>78</Rollno>
+           <Class>4</Class>
+           <Address>Nagpur</Address>
+     </student>
+</StudentList>
