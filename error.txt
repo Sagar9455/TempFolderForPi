@@ -1,0 +1,28 @@
+RTNETLINK answers: Device or resource busy
+2025-03-05 15:33:59 [INFO] Connection: Connection opened
+2025-03-05 15:33:59 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to defaultSession (0x01)
+2025-03-05 15:33:59 [DEBUG] Connection: Sending 2 bytes : [1001]
+Timestamp: 1741169039.040473    ID: 18dafa34    X Rx                DL:  8    02 50 01 aa aa aa aa aa     Channel: can0
+2025-03-05 15:33:59 [DEBUG] Connection: Received 2 bytes : [5001]
+2025-03-05 15:33:59 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-05 15:33:59 [ERROR] UdsClient: [InvalidResponseException] : DiagnosticSessionControl service execution returned an invalid response. Response must contain 4 bytes of data representing the server timing requirements (P2 and P2* timeouts). Got 1 bytes
+2025-03-05 15:33:59 [INFO] Connection: Connection closed
+Traceback (most recent call last):
+  File "/home/TempFolderForPi/UDS/UDS_Session.py", line 57, in <module>
+    client.change_session(1)  
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/.local/lib/python3.11/site-packages/udsoncan/client.py", line 167, in decorated
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/.local/lib/python3.11/site-packages/udsoncan/client.py", line 229, in change_session
+    response = services.DiagnosticSessionControl.interpret_response(response, standard_version=self.config['standard_version'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/.local/lib/python3.11/site-packages/udsoncan/services/DiagnosticSessionControl.py", line 105, in interpret_response
+    raise InvalidResponseException(
+udsoncan.exceptions.InvalidResponseException: DiagnosticSessionControl service execution returned an invalid response. Response must contain 4 bytes of data representing the server timing requirements (P2 and P2* timeouts). Got 1 bytes
+
+
+------------------
+(program exited with code: 1)
+Press return to continue
+
