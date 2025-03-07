@@ -1,0 +1,279 @@
+2025-03-07 14:56:28 [INFO] Connection: Connection opened
+2025-03-07 14:56:28 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 14:56:28 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 14:56:29 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 14:56:29 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 14:56:29 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 14:56:29 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 14:56:29 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 14:56:29 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 14:56:29 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 14:56:29 [INFO] Connection: Connection closed
+2025-03-07 15:02:58 [INFO] Connection: Connection opened
+2025-03-07 15:02:58 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:02:58 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:02:59 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:02:59 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:02:59 [INFO] Connection: Connection closed
+2025-03-07 15:03:45 [INFO] Connection: Connection opened
+2025-03-07 15:03:45 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:03:45 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:03:45 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:03:45 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:03:45 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:03:45 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 15:03:45 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 15:03:45 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:03:45 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:03:45 [INFO] Connection: Connection closed
+2025-03-07 15:05:38 [INFO] Connection: Connection opened
+2025-03-07 15:05:38 [INFO] Connection: Connection closed
+2025-03-07 15:06:36 [INFO] Connection: Connection opened
+2025-03-07 15:06:36 [INFO] Connection: Connection closed
+2025-03-07 15:06:59 [INFO] Connection: Connection opened
+2025-03-07 15:06:59 [INFO] UdsClient: ECUReset<0x11> - Requesting reset of type 0x01 (hardReset)
+2025-03-07 15:06:59 [DEBUG] Connection: Sending 2 bytes : [1101]
+2025-03-07 15:06:59 [DEBUG] Connection: Received 2 bytes : [5101]
+2025-03-07 15:06:59 [INFO] UdsClient: Received positive response for service ECUReset (0x11) from server.
+2025-03-07 15:06:59 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:06:59 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:06:59 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:06:59 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:06:59 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:06:59 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 15:06:59 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 15:06:59 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:06:59 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:06:59 [INFO] Connection: Connection closed
+2025-03-07 15:11:18 [INFO] Connection: Connection opened
+2025-03-07 15:11:18 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:11:18 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:11:19 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:11:19 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:11:19 [INFO] Connection: Connection closed
+2025-03-07 15:11:52 [INFO] Connection: Connection opened
+2025-03-07 15:11:52 [INFO] UdsClient: ECUReset<0x11> - Requesting reset of type 0x01 (hardReset)
+2025-03-07 15:11:52 [DEBUG] Connection: Sending 2 bytes : [1101]
+2025-03-07 15:11:53 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:11:53 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:11:53 [INFO] Connection: Connection closed
+2025-03-07 15:19:48 [INFO] Connection: Connection opened
+2025-03-07 15:19:48 [INFO] UdsClient: ECUReset<0x11> - Requesting reset of type 0x01 (hardReset)
+2025-03-07 15:19:48 [DEBUG] Connection: Sending 2 bytes : [1101]
+2025-03-07 15:19:49 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:19:49 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:19:49 [INFO] Connection: Connection closed
+2025-03-07 15:24:34 [INFO] Connection: Connection opened
+2025-03-07 15:24:34 [INFO] UdsClient: ECUReset<0x11> - Requesting reset of type 0x01 (hardReset)
+2025-03-07 15:24:34 [DEBUG] Connection: Sending 2 bytes : [1101]
+2025-03-07 15:24:35 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:24:35 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:24:35 [INFO] Connection: Connection closed
+2025-03-07 15:24:53 [INFO] Connection: Connection opened
+2025-03-07 15:24:53 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:24:53 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:24:54 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:24:54 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:24:54 [INFO] Connection: Connection closed
+2025-03-07 15:26:13 [INFO] Connection: Connection opened
+2025-03-07 15:26:13 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:26:13 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:26:14 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:26:14 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:26:14 [INFO] Connection: Connection closed
+2025-03-07 15:26:33 [INFO] Connection: Connection opened
+2025-03-07 15:26:33 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:26:33 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:26:34 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:26:34 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:26:34 [INFO] Connection: Connection closed
+2025-03-07 15:28:08 [INFO] Connection: Connection opened
+2025-03-07 15:28:08 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:28:08 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:28:09 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=1 sec) 
+2025-03-07 15:28:09 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=1.000 sec)
+2025-03-07 15:28:09 [INFO] Connection: Connection closed
+2025-03-07 15:41:36 [INFO] Connection: Connection opened
+2025-03-07 15:41:36 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:41:36 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:41:36 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:41:36 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:41:36 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:41:36 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 15:41:36 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 15:41:36 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:41:36 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:41:36 [INFO] Connection: Connection closed
+2025-03-07 15:43:51 [INFO] Connection: Connection opened
+2025-03-07 15:43:51 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:43:51 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:43:51 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:43:51 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:43:51 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:43:51 [INFO] Connection: Connection closed
+2025-03-07 15:44:17 [INFO] Connection: Connection opened
+2025-03-07 15:44:17 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:44:17 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:44:17 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:44:17 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:44:17 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:44:17 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 15:44:17 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 15:44:17 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:44:17 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:44:17 [INFO] Connection: Connection closed
+2025-03-07 15:45:36 [INFO] Connection: Connection opened
+2025-03-07 15:45:36 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:45:36 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:45:36 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:45:36 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:45:36 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:45:36 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf17d (IdentificationOptionVehicleManufacturerSpecificDataIdentifier)
+2025-03-07 15:45:36 [DEBUG] Connection: Sending 3 bytes : [22f17d]
+2025-03-07 15:45:36 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:45:36 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:45:37 [INFO] Connection: Connection closed
+2025-03-07 15:55:03 [INFO] Connection: Connection opened
+2025-03-07 15:55:03 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:55:03 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:55:03 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:55:03 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:55:03 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:55:04 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf17d (IdentificationOptionVehicleManufacturerSpecificDataIdentifier)
+2025-03-07 15:55:04 [DEBUG] Connection: Sending 3 bytes : [22f17d]
+2025-03-07 15:55:04 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:55:04 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:55:04 [INFO] Connection: Connection closed
+2025-03-07 15:55:52 [INFO] Connection: Connection opened
+2025-03-07 15:55:52 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:55:52 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:55:52 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:55:52 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:55:52 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:55:53 [INFO] Connection: Connection closed
+2025-03-07 15:56:35 [INFO] Connection: Connection opened
+2025-03-07 15:56:35 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:56:35 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:56:35 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:56:35 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:56:35 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:56:36 [INFO] Connection: Connection closed
+2025-03-07 15:57:23 [INFO] Connection: Connection opened
+2025-03-07 15:57:23 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:57:23 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:57:23 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:57:23 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:57:23 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:57:24 [INFO] Connection: Connection closed
+2025-03-07 15:57:47 [INFO] Connection: Connection opened
+2025-03-07 15:57:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:57:47 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:57:47 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:57:47 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:57:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:57:48 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf17d (IdentificationOptionVehicleManufacturerSpecificDataIdentifier)
+2025-03-07 15:57:48 [DEBUG] Connection: Sending 3 bytes : [22f17d]
+2025-03-07 15:57:48 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:57:48 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:57:48 [INFO] Connection: Connection closed
+2025-03-07 15:58:18 [INFO] Connection: Connection opened
+2025-03-07 15:58:18 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:58:18 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:58:18 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:58:18 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:58:18 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:58:19 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf190 (VINDataIdentifier)
+2025-03-07 15:58:19 [DEBUG] Connection: Sending 3 bytes : [22f190]
+2025-03-07 15:58:19 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:58:19 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:58:19 [INFO] Connection: Connection closed
+2025-03-07 15:58:47 [INFO] Connection: Connection opened
+2025-03-07 15:58:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:58:47 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:58:47 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:58:47 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:58:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:58:48 [INFO] Connection: Connection closed
+2025-03-07 15:59:05 [INFO] Connection: Connection opened
+2025-03-07 15:59:05 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 15:59:05 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 15:59:05 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 15:59:05 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 15:59:05 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 15:59:05 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf190 (VINDataIdentifier)
+2025-03-07 15:59:05 [DEBUG] Connection: Sending 3 bytes : [22f190]
+2025-03-07 15:59:05 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 15:59:05 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 15:59:05 [INFO] Connection: Connection closed
+2025-03-07 16:00:47 [INFO] Connection: Connection opened
+2025-03-07 16:00:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:00:47 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:00:47 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:00:47 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:00:47 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:00:48 [INFO] Connection: Connection closed
+2025-03-07 16:01:19 [INFO] Connection: Connection opened
+2025-03-07 16:01:19 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to defaultSession (0x01)
+2025-03-07 16:01:19 [DEBUG] Connection: Sending 2 bytes : [1001]
+2025-03-07 16:01:19 [DEBUG] Connection: Received 2 bytes : [5001]
+2025-03-07 16:01:19 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:01:19 [ERROR] UdsClient: [InvalidResponseException] : DiagnosticSessionControl service execution returned an invalid response. Response must contain 4 bytes of data representing the server timing requirements (P2 and P2* timeouts). Got 1 bytes
+2025-03-07 16:01:19 [INFO] Connection: Connection closed
+2025-03-07 16:05:14 [INFO] Connection: Connection opened
+2025-03-07 16:05:14 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to defaultSession (0x01)
+2025-03-07 16:05:14 [DEBUG] Connection: Sending 2 bytes : [1001]
+2025-03-07 16:05:14 [DEBUG] Connection: Received 2 bytes : [5001]
+2025-03-07 16:05:14 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:05:14 [ERROR] UdsClient: [InvalidResponseException] : DiagnosticSessionControl service execution returned an invalid response. Response must contain 4 bytes of data representing the server timing requirements (P2 and P2* timeouts). Got 1 bytes
+2025-03-07 16:05:14 [INFO] Connection: Connection closed
+2025-03-07 16:06:42 [INFO] Connection: Connection opened
+2025-03-07 16:06:42 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:06:42 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:06:42 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:06:42 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:06:42 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:06:42 [INFO] Connection: Connection closed
+2025-03-07 16:07:27 [INFO] Connection: Connection opened
+2025-03-07 16:07:27 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:07:27 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:07:27 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:07:27 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:07:27 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:07:27 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf190 (VINDataIdentifier)
+2025-03-07 16:07:27 [DEBUG] Connection: Sending 3 bytes : [22f190]
+2025-03-07 16:07:27 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 16:07:27 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 16:07:27 [INFO] Connection: Connection closed
+2025-03-07 16:11:55 [INFO] Connection: Connection opened
+2025-03-07 16:11:55 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:11:55 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:11:55 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:11:55 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:11:55 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:11:56 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 16:11:56 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 16:11:56 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 16:11:56 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 16:11:56 [INFO] Connection: Connection closed
+2025-03-07 16:24:16 [INFO] Connection: Connection opened
+2025-03-07 16:24:16 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:24:16 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:24:16 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:24:16 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:24:16 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:24:17 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf187 (VehicleManufacturerSparePartNumberDataIdentifier)
+2025-03-07 16:24:17 [DEBUG] Connection: Sending 3 bytes : [22f187]
+2025-03-07 16:24:17 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 16:24:17 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 16:24:17 [INFO] Connection: Connection closed
+2025-03-07 16:25:21 [INFO] Connection: Connection opened
+2025-03-07 16:25:21 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:25:21 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:25:21 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:25:21 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:25:21 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:25:21 [INFO] UdsClient: ReadDataByIdentifier<0x22> - Reading data identifier : 0xf190 (VINDataIdentifier)
+2025-03-07 16:25:21 [DEBUG] Connection: Sending 3 bytes : [22f190]
+2025-03-07 16:25:22 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
+2025-03-07 16:25:22 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
+2025-03-07 16:25:22 [INFO] Connection: Connection closed

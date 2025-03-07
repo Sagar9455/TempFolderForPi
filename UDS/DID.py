@@ -6,6 +6,12 @@ import struct
 import isotp
 import can
 import logging
+from udsoncan.services import ECUReset
+import os
+import time
+
+os.system('sudo ip link set can0 type can bitrate 500000')  # Set bitrate to 500kbps
+os.system('sudo ifconfig can0 up')
 
 logging.basicConfig(level=logging.DEBUG)
 udsoncan.setup_logging()
@@ -53,11 +59,15 @@ stack = isotp.CanStack(bus=bus, address=tp_addr, params=isotp_params)
 conn = PythonIsoTpConnection(stack)
 
 # Start UDS Client
-with Client(conn, request_timeout=5, config=config) as client:
+with Client(conn, request_timeout=10, config=config) as client:
     # Switch to Extended Session (0x10 0x01)
+   # client.ecu_reset(ECUReset.ResetType.hardReset)
+   # print("ECU RESET")
     client.change_session(3)
     print("Switched to Extended Session")
+    time.sleep(0.5)
+    
     
     # Read VIN from DID 0xF1DD with padding
-    response = client.read_data_by_identifier(0xF187)
-    print(f"VIN: {response.service_data.values[0xF187]}")
+    response = client.read_data_by_identifier(0xF190)
+    print(f"VIN: {response.service_data.values[0xF190]}")
