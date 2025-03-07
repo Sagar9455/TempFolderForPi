@@ -6,7 +6,15 @@ import struct
 import isotp
 import can
 import time
+import logging
+import os
+import time
 
+os.system('sudo ip link set can0 type can bitrate 500000')  # Set bitrate to 500kbps
+os.system('sudo ifconfig can0 up')
+
+logging.basicConfig(level=logging.DEBUG)
+udsoncan.setup_logging()
 # Define ISO-TP parameters
 isotp_params = {
     'stmin': 32,
@@ -16,8 +24,7 @@ isotp_params = {
     'tx_padding': 0xAA,  # Ensure padding is applied
     'rx_flowcontrol_timeout': 1000,
     'rx_consecutive_frame_timeout': 1000,
-    'squash_stmin_requirement': False,
-    'max_frame_size': 4095,
+     'max_frame_size': 4095,
     'can_fd': False,
 }
 
@@ -33,7 +40,7 @@ interface = "can0"
 bus = can.interface.Bus(channel=interface, bustype="socketcan", bitrate=500000)
 
 # Define ISO-TP addressing for extended CAN IDs
-tp_addr = isotp.Address(isotp.AddressingMode.Normal_29bits, txid=0x18DB33F1, rxid=0x18DAF190)
+tp_addr = isotp.Address(isotp.AddressingMode.Normal_29bits, txid=0x18DA34FA, rxid=0x18DAFA34)
 
 # Create ISO-TP stack
 stack = isotp.CanStack(bus=bus, address=tp_addr, params=isotp_params)
@@ -63,15 +70,17 @@ with Client(conn, request_timeout=3, config=config) as client:
             client.config["p2_timeout"] = new_p2_timeout
             client.config["p2_star_timeout"] = new_p2_star_timeout
             client.config["request_timeout"] = max(new_p2_timeout * 2, 3)  # Ensure minimum timeout
-
+    
+        
+        
         time.sleep(0.5)
 
         print("Sending Tester Present to keep session alive...")
         client.tester_present(0x00)
 
         print("Reading Data Identifier 0xF190 (VIN)...")
-        response = client.read_data_by_identifier(0xF190)
-        print(f"VIN: {response.service_data.values[0xF190]}")
+        response = client.read_data_by_identifier(0xF17D)
+        print(f"VIN: {response.service_data.values[0xF17D]}")
 
     except Exception as e:
         print(f"Error: {e}")

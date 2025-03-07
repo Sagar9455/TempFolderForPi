@@ -277,3 +277,26 @@
 2025-03-07 16:25:22 [DEBUG] Connection: No data received: [TimeoutException] - Did not receive IsoTP frame from the Transport layer in time (timeout=0.05 sec) 
 2025-03-07 16:25:22 [ERROR] UdsClient: [TimeoutException] : Did not receive response in time. P2 timeout time has expired (timeout=0.050 sec)
 2025-03-07 16:25:22 [INFO] Connection: Connection closed
+2025-03-07 16:34:07 [INFO] Connection: Connection opened
+2025-03-07 16:34:07 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:34:07 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:34:07 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:34:07 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:34:07 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:34:07 [INFO] Connection: Connection closed
+2025-03-07 16:34:51 [INFO] Connection: Connection opened
+2025-03-07 16:34:51 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:34:51 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:34:51 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:34:51 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:34:51 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:34:51 [INFO] Connection: Connection closed
+2025-03-07 16:35:40 [INFO] Connection: Connection opened
+2025-03-07 16:35:40 [INFO] Connection: Connection closed
+2025-03-07 16:37:34 [INFO] Connection: Connection opened
+2025-03-07 16:37:34 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Switching session to extendedDiagnosticSession (0x03)
+2025-03-07 16:37:34 [DEBUG] Connection: Sending 2 bytes : [1003]
+2025-03-07 16:37:34 [DEBUG] Connection: Received 6 bytes : [5003003201f4]
+2025-03-07 16:37:34 [INFO] UdsClient: Received positive response for service DiagnosticSessionControl (0x10) from server.
+2025-03-07 16:37:34 [INFO] UdsClient: DiagnosticSessionControl<0x10> - Received new timing parameters. P2=0.050s and P2*=5.000s.  Using these value from now on.
+2025-03-07 16:37:34 [INFO] Connection: Connection closed
