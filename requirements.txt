@@ -1,0 +1,8 @@
+RPi.GPIO
+board
+busio
+adafruit-ssd1306
+PIL
+os
+can
+threading
