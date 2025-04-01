@@ -1,0 +1,52 @@
+import ctypes
+import os
+class WDBIService:
+    def __init__(self, dll_path):
+        try:
+            self.dll = ctypes.CDLL(dll_path)
+            print(f"Loaded DLL from {dll_path}")
+        except Exception as e:
+            print(f"Error loading DLL: {e}")
+    def connect(self, ecu_address):
+        try:
+            result = self.dll.ConnectToECU(ctypes.c_char_p(ecu_address.encode()))
+            print(f"Connection result: {result}")
+            return result
+        except Exception as e:
+            print(f"Error connecting to ECU: {e}")
+    def disconnect(self):
+        try:
+            result = self.dll.DisconnectFromECU()
+            print(f"Disconnection result: {result}")
+            return result
+        except Exception as e:
+            print(f"Error disconnecting from ECU: {e}")
+    def write_service(self, service_id, data):
+        try:
+            data_buffer = ctypes.create_string_buffer(data.encode())
+            result = self.dll.WriteWDBIService(ctypes.c_int(service_id), data_buffer)
+            print(f"Write result for service {service_id}: {result}")
+            return result
+        except Exception as e:
+            print(f"Error writing service {service_id}: {e}")
+    def read_service(self, service_id):
+        try:
+            data_buffer = ctypes.create_string_buffer(256)  # Adjust buffer size as needed
+            result = self.dll.ReadWDBIService(ctypes.c_int(service_id), data_buffer)
+            data = data_buffer.value.decode()
+            print(f"Read result for service {service_id}: {data}")
+            return data
+        except Exception as e:
+            print(f"Error reading service {service_id}: {e}")
+# Example usage
+if __name__ == "__main__":
+    dll_path = "/path/to/security.dll"
+    ecu_address = "192.168.0.10"
+    service_id = 0x1234
+    data = "TestData"
+    wdbi = WDBIService(dll_path)
+    wdbi.connect(ecu_address)
+    wdbi.write_service(service_id, data)
+    response = wdbi.read_service(service_id)
+    print(f"Service response: {response}")
+    wdbi.disconnect()
