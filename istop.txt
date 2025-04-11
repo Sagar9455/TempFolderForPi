@@ -1,0 +1,40 @@
+class UDSClient:
+    def __init__(self, config):
+        can_cfg = config["uds"]["can"]
+        isotp_cfg = config["uds"]["isotp"]
+        timing_cfg = config["uds"]["timing"]
+        self.uds_config = config["uds"]
+
+        self.tx_id = int(can_cfg["tx_id"], 16)
+        self.rx_id = int(can_cfg["rx_id"], 16)
+        is_extended = can_cfg.get("is_extended", False)
+
+        if is_extended:
+            addr_mode = isotp.AddressingMode.Normal_29bits
+        else:
+            addr_mode = isotp.AddressingMode.Normal_11bits
+
+        address = isotp.Address(
+            addr_mode,
+            txid=self.tx_id,
+            rxid=self.rx_id
+        )
+
+        self.bus = can.interface.Bus(
+            channel=can_cfg["channel"],
+            bustype=can_cfg["interface"],
+            fd=can_cfg.get("can_fd", False)
+        )
+
+        self.stack = isotp.CanStack(
+            bus=self.bus,
+            address=address,
+            params=isotp_cfg
+        )
+
+        self.conn = PythonIsoTpConnection(self.stack)
+
+        self.client_config = default_client_config.copy()
+        self.client_config["p2_timeout"] = timing_cfg["p2_client"] / 1000.0
+        self.client_config["p2_star_timeout"] = timing_cfg["p2_extended_client"] / 1000.0
+        self.client_config["s3_client_timeout"] = timing_cfg["s3_client"] / 1000.0
