@@ -1,0 +1,90 @@
+from modules import oled_display, button_input, config_loader, uds_client
+from modules.report_generator import ReportGenerator
+from modules.file_transfer import transfer_files_to_usb  # Make sure this exists
+import RPi.GPIO as GPIO
+import time
+import os
+
+# Load config
+config = config_loader.load_config("config.json")
+
+# Setup
+oled = oled_display.OLEDDisplay(config["display"])
+btn_map = config["gpio"]["buttons"]
+BTN_FIRST = btn_map["first"]
+BTN_SECOND = btn_map["second"]
+BTN_ENTER = btn_map["enter"]
+BTN_THANKS = btn_map["thanks"]
+
+buttons = button_input.ButtonInput(list(btn_map.values()))
+uds = uds_client.UDSClient(config)
+report = ReportGenerator(config["report"]["filename"])
+menu_combinations = config["menu_combinations"]
+
+def show_text(text):
+    oled.clear()
+    oled.display_text(text)
+
+# Welcome
+show_text("   Welcome to\n  Diagnostics")
+time.sleep(2)
+
+# Main loop
+while True:
+    show_text("Select Option:\n1.ECU Info\n2.Testcases\n3.Flash\n4.USB\n5.Reserved")
+
+    selected_sequence = []
+    variable = 0
+
+    # Combo input mode
+    while True:
+        if GPIO.input(BTN_FIRST) == GPIO.LOW:
+            selected_sequence.append(BTN_FIRST)
+            variable = (variable * 10) + 1
+            show_text(str(variable))
+            time.sleep(0.3)
+
+        if GPIO.input(BTN_SECOND) == GPIO.LOW:
+            selected_sequence.append(BTN_SECOND)
+            variable = (variable * 10) + 2
+            show_text(str(variable))
+            time.sleep(0.3)
+
+        if GPIO.input(BTN_ENTER) == GPIO.LOW:
+            key = str(tuple(selected_sequence))
+            selected_option = menu_combinations.get(key, "Invalid Input")
+            show_text(f"{selected_option}")
+            time.sleep(0.5)
+
+            if selected_option == "ECU Information":
+                show_text("Fetching ECU Info...")
+                uds.get_ecu_information(oled)
+                show_text("Done")
+                time.sleep(2)
+
+            elif selected_option == "Testcase Execution":
+                show_text("Running Testcases...")
+                uds.run_testcase(oled)
+                show_text("Done")
+                time.sleep(2)
+
+            elif selected_option.startswith("File Transfer"):
+                show_text("Transferring logs...")
+                transfer_files_to_usb()
+                show_text("Done")
+                time.sleep(2)
+
+            elif selected_option == "Exit":
+                show_text("Exiting...")
+                time.sleep(1)
+                os.system("exit")
+
+            break  # exit sequence input loop
+
+        if GPIO.input(BTN_THANKS) == GPIO.LOW:
+            show_text("Shutting Down")
+            time.sleep(1)
+            GPIO.cleanup()
+            os.system("sudo poweroff")
+
+        time.sleep(0.1)
